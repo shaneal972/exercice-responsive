@@ -2,6 +2,9 @@
 .container {
     width: 540px;
     margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid black;
 }
 
 a {
@@ -11,6 +14,10 @@ a {
 
 html {
     font-size: 16px;
+}
+
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 /* Header */
@@ -37,10 +44,6 @@ nav {
     background: #665599;
 }
 
-.main-menu {
-    
-}
-
 .main-menu ul li {
     height: 40px;
     padding-top: 10px;
@@ -52,4 +55,135 @@ nav {
 .main-menu ul li a {
     color: #ccc;
     font-size: 1.3rem;
+}
+
+/* Main */
+main {
+    margin-top: 55px;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+}
+
+main h1 {
+    color: #666699;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; */
+}
+
+main p {
+    line-height: 1.6;
+    margin-bottom: 70px;
+}
+
+.vignettes {
+    width: 105px;
+    height: 80px;
+}
+
+.galerie {
+    margin-bottom: 35px;
+}
+
+.galerie ul li {
+    flex-direction: row;
+    width: 100%;
+    border: 1px solid #000;
+    margin-bottom: 5px;
+}
+
+.galerie span {
+    display: block;
+    padding-left: 35px;
+    background: #ededed;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    color: #000;
+    font-weight: bold;
+}    
+
+.galerie ul li a {
+    display: flex;
+}
+
+
+/* Footer */
+.menu-f ul {
+    display: flex;
+    align-items: center;
+    height: 205px;
+}
+
+.menu-f ul li {
+    margin-right: 10px;
+    align-self: center;
+}
+
+.menu-f ul li a {
+    display: block;
+}
+
+/* Responsive  */
+@media screen and (min-width: 768px) {
+    
+    .container {
+        width: 100%;
+    }
+    
+    /* header */
+    .identite {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .logo {
+        margin-bottom: 0;
+    }
+    
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-menu ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .main-menu ul li {
+        padding: 0;
+        padding-right: 15px;
+        border: none;
+        border-right: 2px solid #ccc ;
+        line-height: 2.1;
+    }
+
+    .main-menu ul .blog {
+        border-right: none;
+    }
+
+    .main-menu ul li a {
+        text-align: center;
+        display: block;
+        font-size: 1.2rem;
+    }
+
+    /* Main */
+    main {
+        margin-top: 10px;
+    }
+
+    main img {
+        float: left;
+        width: 215px;
+        height: 140px;
+    }
+
 }
